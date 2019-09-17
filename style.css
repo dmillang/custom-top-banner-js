@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #00B4DB , #0083B0);
+    box-shadow: 0 0.5px 2px 1px rgba(0,0,0,0.2);
+
+    width: 100vw;
+    position: fixed;
+    
+}
+
+.navigation__content {
+    width: 1200px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    color: #fafafa;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 2vw;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+#navigation__btn--open {
+    font-size: 16px;
+    cursor: pointer;
+    transform: rotatey(180deg);
+}
+
+.section__container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    font-weight: 400;   
+    margin: 10px;
+    padding: 2vw;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0.5px 2px 1px rgba(0,0,0,0.2);
+    color: #333;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.section:first-child {
+    margin-top: calc(20px + 50px);
+}
+
+.section--1 {
+    background-color: #feecfc;
+}
+
+.section--2 {
+    background-color: #f8effb;
+}
+
+.section--3 {
+    background-color: #f2f2fa;
+}
+
+.section--4 {
+    background-color: #ecf5f9;
+}
+
+.section--5 {
+    background-color: #e6f8f8;
+}
+
+.topBanner {
+    width: 100vw;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0.5px 2px 1px rgba(0,0,0,0.2);
+    color: #333;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ffffff , #fffebd);
+    box-shadow: 0 0.5px 2px 1px rgba(0,0,0,0.2);
+}
+
+.topBanner__content {
+    font-size: 14px;
+    font-weight: 500;
+    width: 1200px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.btn,
+.btn:focus,
+.btn:active {
+    background-color: transparent;
+    border-width: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Styling for positioning and functionality */
+
+.hidden {
+    display: none;
+}
+
+.topBanner {
+    position: fixed;
+    top:0;
+}
